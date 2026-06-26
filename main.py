@@ -56,7 +56,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def cmd_profile(args: argparse.Namespace) -> None:
     df = load_survey(args.input)
-    schema = profile_dataframe(df)
+    schema = profile_dataframe(df, source_path=args.input)
     save_schema(schema, args.schema)
     print(f"Schema guardado en {args.schema} ({len(schema['columns'])} columnas)")
 
@@ -72,7 +72,7 @@ def cmd_synthesize(args: argparse.Namespace) -> None:
 
     schema = load_schema(args.schema)
     if not schema.get("columns"):
-        synth.profile_and_save_schema(real_df)
+        synth.profile_and_save_schema(real_df, source_path=args.input)
         synth.schema = load_schema(args.schema)
     else:
         synth.schema = schema
@@ -82,7 +82,7 @@ def cmd_synthesize(args: argparse.Namespace) -> None:
 
     from frs.io import save_survey
 
-    save_survey(result, output)
+    save_survey(result, output, schema=synth.schema, reference_path=args.input)
     print(f"Generadas {len(result)} filas -> {output}")
 
     if args.validate:

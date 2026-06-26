@@ -88,9 +88,13 @@ class SurveySynthesizer:
 
         return full.reindex(columns=ALL_COLUMNS)
 
-    def profile_and_save_schema(self, df: pd.DataFrame) -> dict[str, Any]:
+    def profile_and_save_schema(
+        self,
+        df: pd.DataFrame,
+        source_path: str | Path | None = None,
+    ) -> dict[str, Any]:
         """Genera y persiste schema desde datos."""
-        self.schema = profile_dataframe(df)
+        self.schema = profile_dataframe(df, source_path=source_path)
         save_schema(self.schema, self.schema_path)
         return self.schema
 
@@ -108,12 +112,12 @@ def synthesize(
 
     schema_file = Path(schema_path)
     if not schema_file.exists() or not load_schema(schema_path).get("columns"):
-        synth.profile_and_save_schema(df)
+        synth.profile_and_save_schema(df, source_path=input_path)
         synth.schema = load_schema(schema_path)
     else:
         synth.schema = load_schema(schema_path)
 
     synth.fit(df)
     result = synth.sample(n=n, seed=seed)
-    save_survey(result, output_path)
+    save_survey(result, output_path, schema=synth.schema, reference_path=input_path)
     return result

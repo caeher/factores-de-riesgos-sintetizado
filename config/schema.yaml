@@ -64,12 +64,14 @@ columns:
     - '5'
     - '6'
     missing_pct: 1.51
+    export_as_integer: true
   Q2:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.67
+    export_as_integer: true
   Q3:
     dtype: categorical
     categories:
@@ -77,16 +79,20 @@ columns:
     - '2'
     - '3'
     missing_pct: 2.19
+    export_as_integer: true
   Q4:
     dtype: numerical
     min: 1.3
     max: 1.91
     missing_pct: 9.24
+    export_decimal_places: 2
+    export_strip_trailing_zeros: true
   Q5:
     dtype: numerical
     min: 29.0
     max: 140.0
     missing_pct: 9.24
+    export_as_integer: true
   Q6:
     dtype: categorical
     categories:
@@ -96,6 +102,7 @@ columns:
     - '4'
     - '5'
     missing_pct: 0.73
+    export_as_integer: true
   Q7:
     dtype: categorical
     categories:
@@ -107,6 +114,7 @@ columns:
     - '6'
     - '7'
     missing_pct: 0.78
+    export_as_integer: true
   Q8:
     dtype: categorical
     categories:
@@ -118,6 +126,7 @@ columns:
     - '6'
     - '7'
     missing_pct: 1.51
+    export_as_integer: true
   Q9:
     dtype: categorical
     categories:
@@ -129,6 +138,7 @@ columns:
     - '6'
     - '7'
     missing_pct: 0.42
+    export_as_integer: true
   Q10:
     dtype: categorical
     categories:
@@ -141,6 +151,7 @@ columns:
     - '7'
     - '8'
     missing_pct: 0.73
+    export_as_integer: true
   Q11:
     dtype: categorical
     categories:
@@ -151,6 +162,7 @@ columns:
     - '5'
     - '6'
     missing_pct: 1.1
+    export_as_integer: true
   Q12:
     dtype: categorical
     categories:
@@ -160,6 +172,7 @@ columns:
     - '4'
     - '5'
     missing_pct: 1.25
+    export_as_integer: true
   Q13:
     dtype: categorical
     categories:
@@ -169,6 +182,7 @@ columns:
     - '4'
     - '5'
     missing_pct: 0.47
+    export_as_integer: true
   Q14:
     dtype: categorical
     categories:
@@ -178,6 +192,7 @@ columns:
     - '4'
     - '5'
     missing_pct: 0.73
+    export_as_integer: true
   Q15:
     dtype: categorical
     categories:
@@ -190,6 +205,7 @@ columns:
     - '7'
     - '8'
     missing_pct: 1.25
+    export_as_integer: true
   Q16:
     dtype: categorical
     categories:
@@ -202,6 +218,7 @@ columns:
     - '7'
     - '8'
     missing_pct: 0.26
+    export_as_integer: true
   Q17:
     dtype: categorical
     categories:
@@ -214,6 +231,7 @@ columns:
     - '7'
     - '8'
     missing_pct: 10.5
+    export_as_integer: true
   Q18:
     dtype: categorical
     categories:
@@ -226,6 +244,7 @@ columns:
     - '7'
     - '8'
     missing_pct: 6.06
+    export_as_integer: true
   Q19:
     dtype: categorical
     categories:
@@ -238,6 +257,7 @@ columns:
     - '7'
     - '8'
     missing_pct: 9.09
+    export_as_integer: true
   Q20:
     dtype: categorical
     categories:
@@ -249,6 +269,7 @@ columns:
     - '6'
     - '7'
     missing_pct: 4.49
+    export_as_integer: true
   Q21:
     dtype: categorical
     categories:
@@ -261,6 +282,7 @@ columns:
     - '7'
     - '8'
     missing_pct: 2.92
+    export_as_integer: true
   Q22:
     dtype: categorical
     categories:
@@ -270,6 +292,7 @@ columns:
     - '4'
     - '5'
     missing_pct: 1.51
+    export_as_integer: true
   Q23:
     dtype: categorical
     categories:
@@ -279,18 +302,21 @@ columns:
     - '4'
     - '5'
     missing_pct: 0.21
+    export_as_integer: true
   Q24:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.31
+    export_as_integer: true
   Q25:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 2.51
+    export_as_integer: true
   Q26:
     dtype: categorical
     categories:
@@ -300,6 +326,7 @@ columns:
     - '4'
     - '5'
     missing_pct: 0.47
+    export_as_integer: true
   Q27:
     dtype: categorical
     categories:
@@ -308,6 +335,7 @@ columns:
     - '3'
     - '4'
     missing_pct: 2.25
+    export_as_integer: true
   Q34:
     dtype: categorical
     categories:
@@ -319,6 +347,7 @@ columns:
     - '6'
     - '7'
     missing_pct: 8.09
+    export_as_integer: true
   Q35:
     dtype: categorical
     categories:
@@ -330,6 +359,7 @@ columns:
     - '6'
     - '7'
     missing_pct: 4.07
+    export_as_integer: true
   Q36:
     dtype: categorical
     categories:
@@ -341,6 +371,7 @@ columns:
     - '6'
     - '7'
     missing_pct: 2.61
+    export_as_integer: true
   Q37:
     dtype: categorical
     categories:
@@ -352,6 +383,7 @@ columns:
     - '6'
     - '7'
     missing_pct: 4.18
+    export_as_integer: true
   Q38:
     dtype: categorical
     categories:
@@ -360,6 +392,7 @@ columns:
     - '3'
     - '4'
     missing_pct: 1.83
+    export_as_integer: true
   Q39:
     dtype: categorical
     categories:
@@ -368,6 +401,7 @@ columns:
     - '3'
     - '4'
     missing_pct: 3.39
+    export_as_integer: true
   Q40:
     dtype: categorical
     categories:
@@ -379,12 +413,14 @@ columns:
     - '6'
     - '7'
     missing_pct: 0.37
+    export_as_integer: true
   Q44:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 5.12
+    export_as_integer: true
   Q45:
     dtype: categorical
     categories:
@@ -396,6 +432,7 @@ columns:
     - '6'
     - '7'
     missing_pct: 2.56
+    export_as_integer: true
   Q46:
     dtype: categorical
     categories:
@@ -407,6 +444,7 @@ columns:
     - '6'
     - '7'
     missing_pct: 1.72
+    export_as_integer: true
   Q47:
     dtype: categorical
     categories:
@@ -414,6 +452,7 @@ columns:
     - '2'
     - '3'
     missing_pct: 2.92
+    export_as_integer: true
   Q48:
     dtype: categorical
     categories:
@@ -422,6 +461,7 @@ columns:
     - '3'
     - '4'
     missing_pct: 3.81
+    export_as_integer: true
   Q49:
     dtype: categorical
     categories:
@@ -434,6 +474,7 @@ columns:
     - '7'
     - '8'
     missing_pct: 0.78
+    export_as_integer: true
   Q50:
     dtype: categorical
     categories:
@@ -446,6 +487,7 @@ columns:
     - '7'
     - '8'
     missing_pct: 1.2
+    export_as_integer: true
   Q51:
     dtype: categorical
     categories:
@@ -456,6 +498,7 @@ columns:
     - '5'
     - '6'
     missing_pct: 2.77
+    export_as_integer: true
   Q52:
     dtype: categorical
     categories:
@@ -466,6 +509,7 @@ columns:
     - '5'
     - '6'
     missing_pct: 1.41
+    export_as_integer: true
   Q53:
     dtype: categorical
     categories:
@@ -475,6 +519,7 @@ columns:
     - '4'
     - '5'
     missing_pct: 2.19
+    export_as_integer: true
   Q54:
     dtype: categorical
     categories:
@@ -484,6 +529,7 @@ columns:
     - '4'
     - '5'
     missing_pct: 0.57
+    export_as_integer: true
   Q55:
     dtype: categorical
     categories:
@@ -493,6 +539,7 @@ columns:
     - '4'
     - '5'
     missing_pct: 1.51
+    export_as_integer: true
   Q56:
     dtype: categorical
     categories:
@@ -502,6 +549,7 @@ columns:
     - '4'
     - '5'
     missing_pct: 2.45
+    export_as_integer: true
   Q57:
     dtype: categorical
     categories:
@@ -511,6 +559,7 @@ columns:
     - '4'
     - '5'
     missing_pct: 1.15
+    export_as_integer: true
   Q58:
     dtype: categorical
     categories:
@@ -520,323 +569,378 @@ columns:
     - '4'
     - '5'
     missing_pct: 2.04
+    export_as_integer: true
   QN6:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.73
+    export_as_integer: true
   QN7:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.78
+    export_as_integer: true
   QN8:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.51
+    export_as_integer: true
   QN9:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.42
+    export_as_integer: true
   QN10:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.73
+    export_as_integer: true
   QN11:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.1
+    export_as_integer: true
   QN12:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.25
+    export_as_integer: true
   QN13:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.47
+    export_as_integer: true
   QN14:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.73
+    export_as_integer: true
   QN15:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.25
+    export_as_integer: true
   QN16:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.26
+    export_as_integer: true
   QN17:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 10.5
+    export_as_integer: true
   QN18:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 76.5
+    export_as_integer: true
   QN19:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 76.03
+    export_as_integer: true
   QN20:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 4.49
+    export_as_integer: true
   QN21:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 81.88
+    export_as_integer: true
   QN22:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.51
+    export_as_integer: true
   QN23:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.21
+    export_as_integer: true
   QN24:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.31
+    export_as_integer: true
   QN25:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 2.51
+    export_as_integer: true
   QN26:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.47
+    export_as_integer: true
   QN27:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 2.25
+    export_as_integer: true
   QN34:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 65.33
+    export_as_integer: true
   QN35:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 4.07
+    export_as_integer: true
   QN36:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 78.69
+    export_as_integer: true
   QN37:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 81.04
+    export_as_integer: true
   QN38:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.83
+    export_as_integer: true
   QN39:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 3.39
+    export_as_integer: true
   QN40:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 88.36
+    export_as_integer: true
   QN44:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 5.12
+    export_as_integer: true
   QN45:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 81.72
+    export_as_integer: true
   QN46:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.72
+    export_as_integer: true
   QN47:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 82.61
+    export_as_integer: true
   QN48:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 82.51
+    export_as_integer: true
   QN49:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.78
+    export_as_integer: true
   QN50:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.2
+    export_as_integer: true
   QN51:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 2.77
+    export_as_integer: true
   QN52:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.41
+    export_as_integer: true
   QN53:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 2.19
+    export_as_integer: true
   QN54:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.57
+    export_as_integer: true
   QN55:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.51
+    export_as_integer: true
   QN56:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 2.45
+    export_as_integer: true
   QN57:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.15
+    export_as_integer: true
   QN58:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 2.04
+    export_as_integer: true
   qnowtg:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 9.24
+    export_as_integer: true
   qnobeseg:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 9.24
+    export_as_integer: true
   qnunwtg:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 9.24
+    export_as_integer: true
   qnfrvgg:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 1.83
+    export_as_integer: true
   qnpa7g:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 0.78
+    export_as_integer: true
   qnpe5g:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 2.77
+    export_as_integer: true
   qnc1g:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 90.39
+    export_as_integer: true
   qnc2g:
     dtype: categorical
     categories:
     - '1'
     - '2'
     missing_pct: 93.16
+    export_as_integer: true
   weight:
     dtype: numerical
     min: 114.8873
     max: 414.0946
     missing_pct: 0.0
+    export_decimal_places: 4
+    export_strip_trailing_zeros: true
   stratum:
     dtype: categorical
     categories:
@@ -861,6 +965,7 @@ columns:
     - '201301019'
     - '201301020'
     missing_pct: 0.0
+    export_as_integer: true
   psu:
     dtype: categorical
     categories:
@@ -906,3 +1011,4 @@ columns:
     - '8'
     - '9'
     missing_pct: 0.0
+    export_as_integer: true

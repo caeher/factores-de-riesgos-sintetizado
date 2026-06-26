@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any
 
 import numpy as np
@@ -15,6 +16,7 @@ from frs.constants import (
     Q_COLUMNS,
     SYNTH_COLUMNS,
 )
+from frs.io import infer_csv_export_format
 
 
 @dataclass
@@ -86,12 +88,22 @@ def infer_column_profile(df: pd.DataFrame, column: str) -> dict[str, Any]:
     }
 
 
-def profile_dataframe(df: pd.DataFrame) -> dict[str, Any]:
+def profile_dataframe(
+    df: pd.DataFrame,
+    source_path: str | Path | None = None,
+) -> dict[str, Any]:
     """Genera schema completo desde DataFrame."""
     columns: dict[str, Any] = {}
+    export_format: dict[str, dict[str, Any]] = {}
+    if source_path is not None and Path(source_path).exists():
+        export_format = infer_csv_export_format(source_path)
+
     for col in ALL_COLUMNS:
         if col in df.columns:
-            columns[col] = infer_column_profile(df, col)
+            profile = infer_column_profile(df, col)
+            if col in export_format:
+                profile.update(export_format[col])
+            columns[col] = profile
     return {
         "dataset": "SLV2013_Public_Use",
         "n_rows": len(df),
