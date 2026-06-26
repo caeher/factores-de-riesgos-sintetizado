@@ -46,7 +46,7 @@ Escribe [`config/schema.yaml`](config/schema.yaml) con tipos, rangos y % missing
 python main.py synthesize `
   --input data/input/SLV2013_Public_Use.csv `
   --output data/output/synthetic_SLV2013.csv `
-  -n 5000 `
+  -n 20000 `
   --seed 42 `
   --validate
 ```
